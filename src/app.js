@@ -43,7 +43,7 @@ export default function App() {
   };
 
   const allEmoji = Object.keys(animalDictionary);
-  
+
   const checkMeaning = (input) => {
     if (input in animalDictionary) {
       const meaning = animalDictionary[input];
@@ -51,4 +51,9 @@ export default function App() {
     } else {
       setMeaning("Sorry! Not found!");
     }
+  };
+  
+  const emojiClickHandler = (emoji) => {
+    const meaning = animalDictionary[emoji];
+    setMeaning(meaning);
   };
