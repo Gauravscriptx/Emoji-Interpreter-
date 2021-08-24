@@ -77,3 +77,48 @@ export default function App() {
         }}
         onChange={changeHandler}
       />
+       <div
+        style={{
+          color: primaryTextColor,
+          margin: 30,
+          fontSize: "1.5rem",
+          fontWeight: "bold"
+        }}
+      >
+        {meaning}
+      </div>
+ <h3
+        style={{
+          color: primaryTextColor,
+          fontSize: "1.2rem",
+          fontWeight: "bold"
+        }}
+      >
+        Emojis we know
+      </h3>
+      <div
+        style={{
+          width: 400,
+          margin: "auto"
+        }}
+      >
+        {allEmoji.map((emoji) => {
+          return (
+            <span
+              key={emoji}
+              onClick={() => emojiClickHandler(emoji)}
+              style={{
+                fontSize: "2rem",
+                padding: "1rem",
+                cursor: "pointer",
+                display: "inline-block"
+              }}
+            >
+              {emoji}
+            </span>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
