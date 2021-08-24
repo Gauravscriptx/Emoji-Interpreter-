@@ -1,0 +1,10 @@
+import "./styles.css";
+import { useState } from "react";
+
+export default function App() {
+  const [meaning, setMeaning] = useState("");
+
+  const changeHandler = (e) => {
+    const userInput = e.target.value;
+    checkMeaning(userInput);
+  };
