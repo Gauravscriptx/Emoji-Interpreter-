@@ -8,3 +8,9 @@ export default function App() {
     const userInput = e.target.value;
     checkMeaning(userInput);
   };
+  const primaryTextColor = "#EF4444";
+
+  const animalDictionary = {
+    "🐼": "Panda",
+    "🦔": "Hedgehog",
+    "🦩": "Flamingo",
