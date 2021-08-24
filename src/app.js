@@ -67,3 +67,13 @@ export default function App() {
         alignItem: "center",
         alignContent: "center"
       }}
+      <h1 style={{ color: primaryTextColor }}>Animal Emoji Intrepretor</h1>
+      <input
+        style={{
+          fontSize: "1.2rem",
+          padding: "1rem",
+          borderRadius: "10px",
+          margin: "2rem"
+        }}
+        onChange={changeHandler}
+      />
