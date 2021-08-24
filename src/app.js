@@ -52,8 +52,18 @@ export default function App() {
       setMeaning("Sorry! Not found!");
     }
   };
-  
+
   const emojiClickHandler = (emoji) => {
     const meaning = animalDictionary[emoji];
     setMeaning(meaning);
   };
+  return (
+    <div
+      className="App"
+      style={{
+        height: 600,
+        paddingTop: 50,
+        justifyContent: "center",
+        alignItem: "center",
+        alignContent: "center"
+      }}
