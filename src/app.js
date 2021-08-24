@@ -37,3 +37,9 @@ export default function App() {
     "🐁": "Mouse",
     "🐀": "Rat",
     "🐹": "Hamster",
+    "🐰": "Rabbit Face",
+    "🐇": "Rabbit",
+    "🐿️": "Chipmunk"
+  };
+
+  const allEmoji = Object.keys(animalDictionary);
